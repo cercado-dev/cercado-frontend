@@ -17,26 +17,24 @@
 					Hello, {$currentUser?.username || 'User'}!
 				</p>
 				<div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-					<div class="rounded-md shadow">
-						<a
-							href="/dashboard"
-							class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-						>
-							Go to Dashboard
-						</a>
-					</div>
+					<a
+						href="/dashboard"
+						class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-lg text-white bg-magenta-600 hover:bg-magenta-700 transition-all duration-150 hover:-translate-y-0.5 md:py-4 md:text-lg md:px-10"
+						style="box-shadow: 0 1px 3px rgba(230, 0, 126, 0.3)"
+					>
+						Go to Dashboard
+					</a>
 				</div>
 			</div>
 		{:else}
 			<div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-				<div class="rounded-md shadow">
-					<a
-						href="/login"
-						class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-					>
-						Get Started
-					</a>
-				</div>
+				<a
+					href="/login"
+					class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold rounded-lg text-white bg-magenta-600 hover:bg-magenta-700 transition-all duration-150 hover:-translate-y-0.5 md:py-4 md:text-lg md:px-10"
+					style="box-shadow: 0 1px 3px rgba(230, 0, 126, 0.3)"
+				>
+					Get Started
+				</a>
 			</div>
 		{/if}
 	</div>

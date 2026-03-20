@@ -12,21 +12,28 @@
 
 {#if $isAuthenticated}
 	<div>
-		<div class="mb-8">
-			<h1 class="text-3xl font-bold text-gray-900">Dashboard</h1>
-			<p class="mt-1 text-sm text-gray-600">Welcome back, {$currentUser?.username}!</p>
+		<!-- Header -->
+		<div class="mb-7">
+			<h1 class="text-[28px] font-bold tracking-tight text-gray-900">
+				Good morning, <span class="text-magenta-600">{$currentUser?.username}</span>! 👋
+			</h1>
+			<p class="text-sm text-gray-600 mt-1">
+				Here's what's happening with your store today.
+			</p>
 		</div>
 
 		<!-- Stats Grid -->
-		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-7">
 			<a
 				href="/products"
-				class="bg-white overflow-hidden rounded-lg border border-gray-200 hover:shadow-md transition-shadow"
+				class="group bg-white overflow-hidden rounded-card border border-gray-200 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)]"
+				style="box-shadow: var(--shadow-card)"
 			>
-				<div class="p-6">
-					<div class="flex items-center">
-						<div class="flex-shrink-0 p-3 bg-cyan-100 rounded-lg">
-							<svg class="h-6 w-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<div class="border-t-[3px] border-cyan-500"></div>
+				<div class="p-5">
+					<div class="flex items-center justify-between mb-3">
+						<div class="p-2.5 bg-cyan-50 rounded-lg">
+							<svg class="h-5 w-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -35,24 +42,22 @@
 								/>
 							</svg>
 						</div>
-						<div class="ml-5 w-0 flex-1">
-							<dl>
-								<dt class="text-sm font-medium text-gray-500 truncate">Total Products</dt>
-								<dd class="text-2xl font-bold text-gray-900">-</dd>
-							</dl>
-						</div>
 					</div>
+					<dt class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Total Products</dt>
+					<dd class="text-2xl font-bold text-gray-900">-</dd>
 				</div>
 			</a>
 
 			<a
 				href="/orders"
-				class="bg-white overflow-hidden rounded-lg border border-gray-200 hover:shadow-md transition-shadow"
+				class="group bg-white overflow-hidden rounded-card border border-gray-200 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)]"
+				style="box-shadow: var(--shadow-card)"
 			>
-				<div class="p-6">
-					<div class="flex items-center">
-						<div class="flex-shrink-0 p-3 bg-purple-100 rounded-lg">
-							<svg class="h-6 w-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<div class="border-t-[3px] border-magenta-500"></div>
+				<div class="p-5">
+					<div class="flex items-center justify-between mb-3">
+						<div class="p-2.5 bg-magenta-50 rounded-lg">
+							<svg class="h-5 w-5 text-magenta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -61,24 +66,22 @@
 								/>
 							</svg>
 						</div>
-						<div class="ml-5 w-0 flex-1">
-							<dl>
-								<dt class="text-sm font-medium text-gray-500 truncate">Total Orders</dt>
-								<dd class="text-2xl font-bold text-gray-900">-</dd>
-							</dl>
-						</div>
 					</div>
+					<dt class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Total Orders</dt>
+					<dd class="text-2xl font-bold text-gray-900">-</dd>
 				</div>
 			</a>
 
 			<a
 				href="/stores"
-				class="bg-white overflow-hidden rounded-lg border border-gray-200 hover:shadow-md transition-shadow"
+				class="group bg-white overflow-hidden rounded-card border border-gray-200 transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)]"
+				style="box-shadow: var(--shadow-card)"
 			>
-				<div class="p-6">
-					<div class="flex items-center">
-						<div class="flex-shrink-0 p-3 bg-pink-100 rounded-lg">
-							<svg class="h-6 w-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<div class="border-t-[3px] border-yellow-500"></div>
+				<div class="p-5">
+					<div class="flex items-center justify-between mb-3">
+						<div class="p-2.5 bg-yellow-50 rounded-lg">
+							<svg class="h-5 w-5 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -87,21 +90,21 @@
 								/>
 							</svg>
 						</div>
-						<div class="ml-5 w-0 flex-1">
-							<dl>
-								<dt class="text-sm font-medium text-gray-500 truncate">Connected Stores</dt>
-								<dd class="text-2xl font-bold text-gray-900">-</dd>
-							</dl>
-						</div>
 					</div>
+					<dt class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Connected Stores</dt>
+					<dd class="text-2xl font-bold text-gray-900">-</dd>
 				</div>
 			</a>
 
-			<div class="bg-white overflow-hidden rounded-lg border border-gray-200">
-				<div class="p-6">
-					<div class="flex items-center">
-						<div class="flex-shrink-0 p-3 bg-green-100 rounded-lg">
-							<svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<div
+				class="bg-white overflow-hidden rounded-card border border-gray-200"
+				style="box-shadow: var(--shadow-card)"
+			>
+				<div class="border-t-[3px] border-emerald-500"></div>
+				<div class="p-5">
+					<div class="flex items-center justify-between mb-3">
+						<div class="p-2.5 bg-emerald-50 rounded-lg">
+							<svg class="h-5 w-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -110,20 +113,16 @@
 								/>
 							</svg>
 						</div>
-						<div class="ml-5 w-0 flex-1">
-							<dl>
-								<dt class="text-sm font-medium text-gray-500 truncate">Revenue</dt>
-								<dd class="text-2xl font-bold text-gray-900">-</dd>
-							</dl>
-						</div>
 					</div>
+					<dt class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Revenue</dt>
+					<dd class="text-2xl font-bold text-gray-900">-</dd>
 				</div>
 			</div>
 		</div>
 
 		<!-- Recent Activity -->
 		<div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-			<div class="bg-white rounded-lg border border-gray-200 p-6">
+			<div class="bg-white rounded-card border border-gray-200 p-6" style="box-shadow: var(--shadow-card)">
 				<h2 class="text-lg font-semibold text-gray-900 mb-4">Recent Orders</h2>
 				<div class="text-center text-gray-500 py-8">
 					<svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -138,33 +137,33 @@
 				</div>
 			</div>
 
-			<div class="bg-white rounded-lg border border-gray-200 p-6">
+			<div class="bg-white rounded-card border border-gray-200 p-6" style="box-shadow: var(--shadow-card)">
 				<h2 class="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h2>
 				<div class="space-y-3">
 					<a
 						href="/orders"
-						class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
+						class="flex items-center justify-between p-3 rounded-lg hover:bg-magenta-50 transition-colors border border-gray-200 group"
 					>
-						<span class="text-sm font-medium text-gray-700">Sync Orders</span>
-						<svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<span class="text-sm font-medium text-gray-700 group-hover:text-magenta-600">Sync Orders</span>
+						<svg class="w-5 h-5 text-gray-400 group-hover:text-magenta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 						</svg>
 					</a>
 					<a
 						href="/products"
-						class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
+						class="flex items-center justify-between p-3 rounded-lg hover:bg-magenta-50 transition-colors border border-gray-200 group"
 					>
-						<span class="text-sm font-medium text-gray-700">View Products</span>
-						<svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<span class="text-sm font-medium text-gray-700 group-hover:text-magenta-600">View Products</span>
+						<svg class="w-5 h-5 text-gray-400 group-hover:text-magenta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 						</svg>
 					</a>
 					<a
 						href="/stores"
-						class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
+						class="flex items-center justify-between p-3 rounded-lg hover:bg-magenta-50 transition-colors border border-gray-200 group"
 					>
-						<span class="text-sm font-medium text-gray-700">Manage Stores</span>
-						<svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<span class="text-sm font-medium text-gray-700 group-hover:text-magenta-600">Manage Stores</span>
+						<svg class="w-5 h-5 text-gray-400 group-hover:text-magenta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 						</svg>
 					</a>

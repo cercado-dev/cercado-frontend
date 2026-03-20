@@ -59,7 +59,7 @@
 				type="text"
 				bind:value={searchQuery}
 				placeholder="Search by store name or type..."
-				class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500 sm:text-sm"
+				class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-magenta-500 focus:border-magenta-500 sm:text-sm"
 			/>
 		</div>
 		<p class="mt-2 text-sm text-gray-500">
@@ -69,7 +69,7 @@
 
 	{#if isLoading}
 		<div class="flex justify-center py-12">
-			<div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-500"></div>
+			<div class="animate-spin rounded-full h-12 w-12 border-b-2 border-magenta-600"></div>
 		</div>
 	{:else if error}
 		<div class="bg-red-50 border border-red-200 rounded-lg p-4">
@@ -101,12 +101,13 @@
 			{#each filteredStores as store}
 				<a
 					href="/stores/{store.id}"
-					class="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-all"
+					class="group bg-white border border-gray-200 rounded-card overflow-hidden transition-all duration-150 hover:-translate-y-0.5"
+					style="box-shadow: var(--shadow-card)"
 				>
 					<!-- Store Icon/Header -->
-					<div class="bg-gradient-to-br from-cyan-50 to-purple-50 p-6 flex items-center justify-center">
+					<div class="bg-gradient-to-br from-cyan-50 to-magenta-50 p-6 flex items-center justify-center">
 						<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
-							<svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<svg class="w-8 h-8 text-magenta-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -120,7 +121,7 @@
 					<!-- Store Info -->
 					<div class="p-6">
 						<div class="flex items-start justify-between mb-3">
-							<h3 class="text-lg font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors">
+							<h3 class="text-lg font-semibold text-gray-900 group-hover:text-magenta-600 transition-colors">
 								{store.name}
 							</h3>
 							<span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
@@ -148,7 +149,7 @@
 
 					<!-- Footer -->
 					<div class="px-6 py-3 bg-gray-50 border-t border-gray-200">
-						<span class="text-sm font-medium text-cyan-600 group-hover:text-cyan-700">
+						<span class="text-sm font-medium text-magenta-600 group-hover:text-magenta-700">
 							View details →
 						</span>
 					</div>

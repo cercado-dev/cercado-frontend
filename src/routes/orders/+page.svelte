@@ -62,7 +62,7 @@
 			type="button"
 			onclick={syncOrders}
 			disabled={isSyncing}
-			class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 disabled:opacity-50 transition-colors"
+			class="inline-flex items-center gap-2 px-4 py-2 bg-magenta-600 text-white rounded-lg hover:bg-magenta-700 disabled:opacity-50 transition-colors"
 		>
 			{#if isSyncing}
 				<svg class="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
@@ -96,7 +96,7 @@
 				type="text"
 				bind:value={searchQuery}
 				placeholder="Search by order ID or status..."
-				class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500 sm:text-sm"
+				class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-magenta-500 focus:border-magenta-500 sm:text-sm"
 			/>
 		</div>
 		<p class="mt-2 text-sm text-gray-500">
@@ -106,7 +106,7 @@
 
 	{#if isLoading}
 		<div class="flex justify-center py-12">
-			<div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-500"></div>
+			<div class="animate-spin rounded-full h-12 w-12 border-b-2 border-magenta-600"></div>
 		</div>
 	{:else if error}
 		<div class="bg-red-50 border border-red-200 rounded-lg p-4">
@@ -134,7 +134,7 @@
 		</div>
 	{:else}
 		<!-- Orders Table -->
-		<div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+		<div class="bg-white rounded-card border border-gray-200 overflow-hidden" style="box-shadow: var(--shadow-card)">
 			<div class="overflow-x-auto">
 				<table class="min-w-full divide-y divide-gray-200">
 					<thead class="bg-gray-50">
@@ -176,7 +176,7 @@
 								<td class="px-6 py-4 whitespace-nowrap text-right text-sm">
 									<a
 										href="/orders/{order.id}"
-										class="text-cyan-600 hover:text-cyan-900 font-medium"
+										class="text-magenta-600 hover:text-magenta-900 font-medium"
 									>
 										View
 									</a>

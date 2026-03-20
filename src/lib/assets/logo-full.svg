@@ -1,0 +1,16 @@
+<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cmyk-logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00B8E6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E6007E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Mark -->
+  <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#cmyk-logo-gradient)" />
+  <text x="24" y="32" text-anchor="middle" fill="white" font-size="24" font-weight="700" font-family="system-ui, -apple-system, sans-serif">C</text>
+
+  <!-- Wordmark -->
+  <text x="58" y="33" fill="#111827" font-size="26" font-weight="600" font-family="DM Sans, system-ui, sans-serif" letter-spacing="-0.02em">Cercado</text>
+</svg>

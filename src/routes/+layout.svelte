@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import { auth, isAuthenticated, currentUser } from '$lib/auth';
 	import { getLogoutUrl } from '$lib/keycloak';
 	import { browser } from '$app/environment';
@@ -22,7 +21,6 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
 	<title>Cercado</title>
 </svelte:head>
 

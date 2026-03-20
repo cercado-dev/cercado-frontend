@@ -1,11 +1,27 @@
-<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 36 36">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
   <defs>
-    <linearGradient id="cmyk-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="cmyk-gradient-mark" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#00B8E6;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#E6007E;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
     </linearGradient>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+      .gradient-fill {
+        fill: url(#cmyk-gradient-mark);
+      }
+    </style>
   </defs>
-  <rect width="36" height="36" rx="10" fill="url(#cmyk-gradient)" />
-  <text x="18" y="26.5" text-anchor="middle" fill="white" font-size="22" font-weight="700" font-family="system-ui, -apple-system, sans-serif">C</text>
+  <!-- Background with rounded corners -->
+  <rect width="36" height="36" rx="10" fill="url(#cmyk-gradient-mark)"/>
+  <g>
+    <path class="st0" d="M11.71,14.41c-.53,0-1.03.2-1.41.56l-7.98,7.65h22.44c.53,0,1.03-.2,1.41-.56l7.98-7.65H11.71ZM25.77,21.68c-.27.26-.63.4-1.01.4H3.66l7.03-6.74c.27-.26.63-.4,1.01-.4h21.1l-7.03,6.74Z"/>
+    <path class="st0" d="M11.71,13.88c-.68,0-1.32.25-1.8.71L.98,23.14h23.78c.68,0,1.32-.25,1.8-.71l7.98-7.64.95-.91H11.71ZM24.76,22.61H2.32l7.98-7.65c.38-.36.88-.56,1.41-.56h22.44l-7.98,7.65c-.38.36-.88.56-1.41.56Z"/>
+  </g>
+  <path class="st0" d="M32.8,14.94l-7.03,6.74c-.27.26-.63.4-1.01.4H3.66l7.03-6.74c.27-.26.63-.4,1.01-.4h21.1Z"/>
+  <path class="st0" d="M28.85,17.91l1.25-1.2h-5.08c-.18,0-.33-.14-.33-.32v-.88h-3.75v.88c0,.18-.15.32-.33.32h-4.75c-.18,0-.33-.14-.33-.32v-.88h-3.75v.88c0,.18-.15.32-.33.32h-1.33l-1.25,1.2h2.58c.18,0,.33.14.33.32v.56c0,.18-.15.32-.33.32h-3.83l-1.25,1.2h5.08c.18,0,.33.14.33.32v.88h3.75v-.88c0-.18.15-.32.33-.32h4.75c.18,0,.33.14.33.32v.88h3.75v-.88c0-.18.15-.32.33-.32h1.33l1.25-1.2h-2.58c-.18,0-.33-.14-.33-.32v-.56c0-.18.15-.32.33-.32h3.83ZM20.61,19.11h-4.75c-.18,0-.33-.14-.33-.32v-.56c0-.18.15-.32.33-.32h4.75c.18,0,.33.14.33.32v.56c0,.18-.15.32-.33.32Z"/>
 </svg>

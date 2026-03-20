@@ -16,18 +16,34 @@ Modern, responsive web interface built with SvelteKit, TypeScript, and Tailwind 
 
 ## Getting Started
 
-### 1. Install Dependencies
+### Option 1: Docker (Recommended for Development)
 
+1. Copy `.env.example` to `.env` and configure:
+```bash
+cp .env.example .env
+# Edit .env with your values
+```
+
+2. Start with Docker Compose:
+```bash
+docker compose up
+```
+
+The app will be available at http://localhost:5173
+
+See [DOCKER.md](./DOCKER.md) for detailed Docker instructions.
+
+### Option 2: Local Node.js
+
+1. Install Dependencies
 ```bash
 npm install
 ```
 
-### 2. Configure Environment
-
-Copy `.env.example` to `.env` and fill in your values:
-
+2. Configure Environment
 ```bash
 cp .env.example .env
+# Edit .env with your values
 ```
 
 Update the following values:
@@ -36,8 +52,7 @@ Update the following values:
 - `PUBLIC_KEYCLOAK_CLIENT_ID` - Your Keycloak client ID
 - `PUBLIC_API_URL` - Your API URL (default: https://localhost:8443)
 
-### 3. Run Development Server
-
+3. Run Development Server
 ```bash
 npm run dev
 

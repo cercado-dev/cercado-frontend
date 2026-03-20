@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: cercado-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      # Mount source code for hot reload
+      - ./src:/app/src
+      - ./static:/app/static
+      - ./.env:/app/.env
+      # Prevent overwriting node_modules
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      # Environment variables from .env file
+      - PUBLIC_KEYCLOAK_URL=${PUBLIC_KEYCLOAK_URL}
+      - PUBLIC_KEYCLOAK_REALM=${PUBLIC_KEYCLOAK_REALM}
+      - PUBLIC_KEYCLOAK_CLIENT_ID=${PUBLIC_KEYCLOAK_CLIENT_ID}
+      - PUBLIC_API_URL=${PUBLIC_API_URL}
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+
+# Optional: Add network if you want to connect with cercado-api
+# networks:
+#   cercado:
+#     external: true

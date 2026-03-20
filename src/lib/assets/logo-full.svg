@@ -1,16 +1,18 @@
-<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 180 48">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
   <defs>
-    <linearGradient id="cmyk-logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="cmyk-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#00B8E6;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#E6007E;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
     </linearGradient>
   </defs>
-
-  <!-- Logo Mark -->
-  <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#cmyk-logo-gradient)" />
-  <text x="24" y="32" text-anchor="middle" fill="white" font-size="24" font-weight="700" font-family="system-ui, -apple-system, sans-serif">C</text>
-
-  <!-- Wordmark -->
-  <text x="58" y="33" fill="#111827" font-size="26" font-weight="600" font-family="DM Sans, system-ui, sans-serif" letter-spacing="-0.02em">Cercado</text>
+  <path fill="url(#cmyk-gradient)" d="M9.49,37.21h16.48v-2.54h-10.14c-1.4,0-2.54-1.14-2.54-2.54v-10.14c0-1.4,1.14-2.54,2.54-2.54h10.14v-2.54H9.49c-2.8,0-5.07,2.27-5.07,5.07v10.14c0,2.8,2.27,5.07,5.07,5.07Z"/>
+  <path fill="url(#cmyk-gradient)" d="M79.22,37.21h16.48v-2.54h-10.14c-1.4,0-2.54-1.14-2.54-2.54v-10.14c0-1.4,1.14-2.54,2.54-2.54h10.14v-2.54h-16.48c-2.8,0-5.07,2.27-5.07,5.07v10.14c0,2.8,2.27,5.07,5.07,5.07Z"/>
+  <path fill="url(#cmyk-gradient)" d="M52.6,37.21h8.88v-15.21c0-1.4,1.14-2.54,2.54-2.54h7.61v-2.54h-13.95c-2.8,0-5.07,2.27-5.07,5.07v15.21Z"/>
+  <path fill="url(#cmyk-gradient)" d="M33.58,37.21h16.48v-2.54h-10.23c-.9,0-1.36-1.09-.72-1.73l10.06-10.06c.57-.57.89-1.34.89-2.15v-.77c0-1.68-1.36-3.04-3.04-3.04h-13.44c-2.8,0-5.07,2.27-5.07,5.07v10.14c0,2.8,2.27,5.07,5.07,5.07ZM47.28,21.2l-8.16,8.16c-.64.64-1.73.19-1.73-.72v-6.64c0-1.4,1.14-2.54,2.54-2.54h6.64c.9,0,1.36,1.09.72,1.73Z"/>
+  <path fill="url(#cmyk-gradient)" d="M114.72,16.93h-16.48v2.54h10.23c.9,0,1.36,1.09.72,1.73l-10.06,10.06c-.57.57-.89,1.34-.89,2.15v.77c0,1.68,1.36,3.04,3.04,3.04h18.51v-15.21c0-2.8-2.27-5.07-5.07-5.07ZM108.38,34.68h-6.64c-.9,0-1.36-1.09-.72-1.73l8.16-8.16c.64-.64,1.73-.19,1.73.72v6.64c0,1.4-1.14,2.54-2.54,2.54Z"/>
+  <path fill="url(#cmyk-gradient)" d="M138.81,16.93h-11.41c-2.8,0-5.07,2.27-5.07,5.07v10.14c0,2.8,2.27,5.07,5.07,5.07h20.29V6.79h-8.88v10.14ZM131.21,32.14v-10.14c0-1.4,1.14-2.54,2.54-2.54h5.07v15.21h-5.07c-1.4,0-2.54-1.14-2.54-2.54Z"/>
+  <path fill="url(#cmyk-gradient)" d="M150.22,22v10.14c0,2.8,2.27,5.07,5.07,5.07h15.21c2.8,0,5.07-2.27,5.07-5.07v-10.14c0-2.8-2.27-5.07-5.07-5.07h-15.21c-2.8,0-5.07,2.27-5.07,5.07ZM159.1,32.14v-10.14c0-1.4,1.14-2.54,2.54-2.54h2.54c1.4,0,2.54,1.14,2.54,2.54v10.14c0,1.4-1.14,2.54-2.54,2.54h-2.54c-1.4,0-2.54-1.14-2.54-2.54Z"/>
 </svg>

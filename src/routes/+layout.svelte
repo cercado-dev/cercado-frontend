@@ -89,6 +89,38 @@
 						</svg>
 						<span>Stores</span>
 					</a>
+
+					<!-- Divider -->
+					<div class="h-px bg-white/[0.08] mx-3 my-2"></div>
+
+					<!-- Colors Section -->
+					<div class="text-[10px] font-semibold uppercase tracking-[1.5px] text-gray-500 px-3 mb-2 mt-2">
+						Color Tools
+					</div>
+
+					<a
+						href="/colors/swatches"
+						class="flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-150 {isActive('/colors/swatches')
+							? 'bg-magenta-500/15 text-magenta-400 font-medium'
+							: 'text-gray-300 hover:bg-white/[0.06] hover:text-white'}"
+					>
+						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+						</svg>
+						<span>Swatch Library</span>
+					</a>
+
+					<a
+						href="/colors/matcher"
+						class="flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-150 {isActive('/colors/matcher')
+							? 'bg-magenta-500/15 text-magenta-400 font-medium'
+							: 'text-gray-300 hover:bg-white/[0.06] hover:text-white'}"
+					>
+						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+						</svg>
+						<span>Find Pantone</span>
+					</a>
 				</nav>
 
 				<!-- User section -->
